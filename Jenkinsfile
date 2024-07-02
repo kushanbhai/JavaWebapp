@@ -4,12 +4,12 @@ pipeline {
    stages {
       stage('clean') {
          steps {
-            bat 'mvn clean'
+            bat 'C:\Program Files\apache-maven-3.9.7-bin\apache-maven-3.9.7\bin\mvn clean'
          }
       }
       stage('package') {
          steps {
-            bat 'mvn install'
+            bat 'C:\Program Files\apache-maven-3.9.7-bin\apache-maven-3.9.7\bin\mvn install'
          }
       }
       stage('deploy') {
